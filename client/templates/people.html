@@ -1,0 +1,10 @@
+<h2>People</h2>
+<ul class="list-group">
+    <li class="list-group-item" ng-repeat="person in people">
+        <a href="#/people/{{person._id}}">
+            {{ person.name }}
+        </a>
+    </li>
+</ul>
+<div class="label label-default" style="margen-bottom:10px">{{ people.length }}</div>
+<div class="alert alert-danger" ng-show="people.length == 0">You have no people</div>
